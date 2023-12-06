@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Notebook</title>
+</head>
+<body>
+    <div id="notebook">
+        <div id="header">
+            <img src="https://p7.hiclipart.com/preview/767/218/546/notebook-pencil-computer-icons-clip-art-notebook-with-pen.jpg" alt="Notebook Logo" class="logo" width="500" height="500">
+            <span class="notebook-name"><b><i>My Notebook</i><b></span>
+            <label class="dark-mode-switch">
+                Dark Mode
+                <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+            </label>
+        </div>
+        <div id="toolbar">
+            <button class="format-btn" onclick="toggleFormat('bold')">B</button>
+            <button class="format-btn" onclick="toggleFormat('italic')">I</button>
+            <button class="format-btn" onclick="toggleFormat('underline')">U</button>
+            <button class="format-btn" onclick="toggleFormat('insertUnorderedList')">UL</button>
+            <button class="format-btn" onclick="toggleFormat('insertOrderedList')">OL</button>
+            <select class="format-select" onchange="changeFont(this.value)">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+            <select class="format-select" onchange="changeFontSize(this.value)">
+                <option value="12px">Small</option>
+                <option value="16px">Medium</option>
+                <option value="20px">Large</option>
+            </select>
+            <button onclick="addNote()">Add Note</button>
+            <button onclick="deleteNote()">Delete Note</button>
+            <button onclick="saveNotes()">Save Notes</button>
+        </div>
+        <div id="notes-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
