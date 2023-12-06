@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #b1abab;
+}
+
+#notebook {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+    border-radius: 10px; 
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 60px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.notebook-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dark-mode-switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.dark-mode-switch input {
+    margin-left: 8px;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px; 
+}
+
+.format-btn, .format-select {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.format-select {
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-switch.dark-mode {
+    color: #fff;
+}
+
+#notebook.dark-mode {
+    background-color: #444;
+}
+
+.note.dark-mode {
+    border: 1px solid #555;
+    background-color: #666;
+    color: #fff;
+}
